@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=MovieRunnerAverage
+comment0.text=\r\n\ Write\ a\ description\ of\ MovieRunnerAverage\ here.\r\n\ Genreates\ average\ movie\ ratings\ based\ on\ ratings\ of\ the\ raters\ in\ the\ data\ files\r\n\ @Suhas\ (your\ name)\ \r\n\ @31/07/2021\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment2.params=
+comment2.target=void\ getAverageRatingOneMovie()
+numComments=3

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=RatingComparator1
+comment0.text=\r\n\ Write\ a\ description\ of\ RatingComparator1\ here.\r\n\ omparator\ class\ to\ sort\ array\ list\ of\ ratings\ in\ descending\ order.\r\n\ @Suhas\ (your\ name)\ \r\n\ @02/08/2021\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=r1\ r2
+comment1.target=int\ compare(Rating,\ Rating)
+numComments=2
