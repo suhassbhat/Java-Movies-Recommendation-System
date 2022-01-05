@@ -11,7 +11,7 @@ import java.util.*;
 import org.apache.commons.csv.*;
 
 public class RaterDatabase {
-    private static HashMap<String,Rater> ourRaters;
+    private static HashMap<String,Rater> ourRaters = null;
      
 	private static void initialize() {
 	    // this method is only called from addRatings 

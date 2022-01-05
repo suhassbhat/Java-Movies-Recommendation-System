@@ -70,6 +70,7 @@ public class FourthRatings {
     private double dotProduct (Rater me, Rater r) {
         double dotProduct = 0;
         ArrayList<String> itemsRated = me.getItemsRated();
+        
         for(String item : itemsRated) {
             if(r.hasRating(item)) {
                 double meRating = me.getRating(item) - 5;
@@ -81,12 +82,15 @@ public class FourthRatings {
     }
     
     private ArrayList<Rating> getSimilarities (String id) {
+        
         ArrayList<Rater> raters = RaterDatabase.getRaters();
         ArrayList<Rating> similarityRatings = new ArrayList<Rating>();
         similarityRatings.clear();
         Rater me = RaterDatabase.getRater(id);
         for(Rater rater : raters) {
+            
             if(!rater.getID().equals(id)) {
+                
                 double ratingsDotProduct = dotProduct(me,rater);
                 if(ratingsDotProduct > 0) {
                     similarityRatings.add(new Rating(rater.getID(), ratingsDotProduct));
@@ -98,6 +102,7 @@ public class FourthRatings {
     }
     
     public ArrayList<Rating> getSimilarRatings (String raterID, int numSimilarRaters, int minimalRaters) {
+        
         ArrayList<Rating> ratings = new ArrayList<Rating> ();
         ratings.clear();
         ArrayList<Rater> raters = new ArrayList<Rater>();
